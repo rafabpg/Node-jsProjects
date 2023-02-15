@@ -1,8 +1,11 @@
 const express = require('express');
-const app  =express();
+const app  = express();
 
 
-app.use(express.json());
+//route params => servem para identificar um recurso 
+// query params => utilizar para fazer um filtro ou paginação
+//body params =>  os objetos de inserção / alteração
+app.use(express.json()); // middleware
 //localhost:3031
 //
 // app.get("/",(request,response)=>{
